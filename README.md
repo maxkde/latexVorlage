@@ -1,12 +1,13 @@
+# Inhalt der Vorlage
+Dies ist eine LaTeX-Vorlage, die genutzt werden kann, um Seminar, Studien-, Masterarbeiten oder ähnliches am DHBW CAS mit LaTeX zu verfassen. Die Vorlage basiert auf einer [Vorlage der DHBW Horb](https://github.com/dhbw-horb/latexVorlage) und wurde etzwas angepasst, um den Richtlinien des DHBW CAS (bzw. dem dortigen Fachbereich Technik) zu entsprechen. Dies ist keine offizielle Vorlage des DHBW CAS, daher erfolgt die Verwendung natürlich auf eigene Gefahr.
+
 # Vorlage verwenden
 Pflichtangaben und einigen weitere Einstellungen können in `einstellungen.tex` geändert werden. Kapitel werden in `content` nach dem Schema `<nn>kapitel.tex` angelegt, wobei &lt;nn&gt; eine mindestens zweistellige Zahl sein muss. Das Logo der Firma kann durch das Ersetzen der Datei `images/fima-deckblatt.png` geändert werden. Die Größe des Bildes ändert man durch das Verkleinern/Vergrößern der Datei.
 
 # Vorschau
-Eine Vorschau, wie ein Dokument mit dieser Vorlage aussieht, kann unter den [GitHub-Actions](https://github.com/maxkde/latextemplate-dhbwcas/actions) für dieses Repository angeschaut werden. Den neuesten Eintrag dort anklicken und das Artefakt dokumentation.pdf herunterladen, bzw. anschauen.
+Eine Vorschau, wie ein Dokument mit dieser Vorlage aussieht (ohne es selbst bauen zu müssen), kann unter den [GitHub-Actions](https://github.com/maxkde/latextemplate-dhbwcas/actions) für dieses Repository angeschaut werden. Den neuesten Eintrag dort anklicken und das Artefakt `documentation-paper` herunterladen, darin liegt dann die `documentation.pdf`.
 
-Hinweis: Unter Miktex 2.9 gibt es derzeit leider Probleme, die aber umgangen werden können. [Mehr dazu hier](https://github.com/dhbw-horb/latexVorlage/issues/23).
-
-# Compilieren
+# Kompilieren
 Für das Paket _latexmk_ und die Erzeugung eines Glossars muss ein Perl-Interpreter installiert sein. Linux- und Mac-User haben normalerweise diesen schon im System installiert. Windows-Nutzern ist ActivePerl zu empfehlen (http://www.activestate.com/activeperl/downloads). Die Vorlage nutzt außerdem _biblatex_ mit dem Backend _biber_ für die Bibliographie.
 
 ## Über latexmk:
