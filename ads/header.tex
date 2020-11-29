@@ -69,6 +69,8 @@
 \usepackage[perpage, hang, multiple, stable]{footmisc} % Fussnoten
 \usepackage[printonlyused]{acronym} % falls gewünscht kann die Option footnote eingefügt werden, dann wird die Erklärung nicht inline sondern in einer Fußnote dargestellt
 \usepackage{listings}
+\usepackage{tablefootnote}
+\usepackage{makecell}
 
 % Notizen. Einsatz mit \todo{Notiz} oder \todo[inline]{Notiz}. 
 \usepackage[obeyFinal,backgroundcolor=yellow,linecolor=black]{todonotes}
@@ -123,7 +125,7 @@
 % Literaturverweise (sowohl deutsch als auch englisch)
 \iflang{de}{%
 \usepackage[
-	backend=biber,		% empfohlen. Falls biber Probleme macht: bibtex
+	backend=bibtex,		% empfohlen. Falls biber Probleme macht: bibtex
 	bibwarn=true,
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=de_DE,
@@ -132,7 +134,7 @@
 }
 \iflang{en}{%
 \usepackage[
-	backend=biber,		% empfohlen. Falls biber Probleme macht: bibtex
+	backend=bibtex,		% empfohlen. Falls biber Probleme macht: bibtex
 	bibwarn=true,
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=en_US,
@@ -167,3 +169,7 @@
 % Abstände in Tabellen
 \setlength{\tabcolsep}{\spaltenabstand}
 \renewcommand{\arraystretch}{\zeilenabstand}
+
+% Überschriften von Tabellenspalten
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
