@@ -22,9 +22,14 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: dokumentation.tex
-        working_directory: Paper
+        #working_directory: . #Das sollte nicht nötig sein, wenn die Haupt-Latex-Datei im Hauptordner des Repositorys liegt
     - name: Publish document as artifact
       uses: actions/upload-artifact@v2
       with:
         name: documentation-paper
-        path: Paper/output/dokumentation.pdf
+        path: output/dokumentation.pdf
+    - name: Delete old artifacts
+      uses: kolpav/purge-artifacts-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        expire-in: 0 # Setting this to 0 will delete all artifacts
