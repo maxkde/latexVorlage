@@ -2,13 +2,7 @@ name: Build paper (LaTeX document)
 
 on:
   push:
-    paths:
-      - Paper/**
-      - .github/workflows/paper-build.yml
   pull_request:
-    paths:
-      - Paper/**
-      - .github/workflows/paper-build.yml
 
 jobs:
   build:
