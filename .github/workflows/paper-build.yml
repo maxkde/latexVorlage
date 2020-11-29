@@ -1,0 +1,30 @@
+name: Build paper (LaTeX document)
+
+on:
+  push:
+    paths:
+      - Paper/**
+      - .github/workflows/paper-build.yml
+  pull_request:
+    paths:
+      - Paper/**
+      - .github/workflows/paper-build.yml
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v2
+    - name: Compile LaTeX document
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: dokumentation.tex
+        working_directory: Paper
+    - name: Publish document as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: documentation-paper
+        path: Paper/output/dokumentation.pdf
