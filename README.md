@@ -1,5 +1,5 @@
 # Inhalt der Vorlage
-Dies ist eine LaTeX-Vorlage, die genutzt werden kann, um Seminar, Studien-, Masterarbeiten oder ähnliches am DHBW CAS mit LaTeX zu verfassen. Die Vorlage basiert auf einer [Vorlage der DHBW Horb](https://github.com/dhbw-horb/latexVorlage) und wurde etzwas angepasst, um den Richtlinien des DHBW CAS (bzw. dem dortigen Fachbereich Technik) zu entsprechen. Dies ist keine offizielle Vorlage des DHBW CAS, daher erfolgt die Verwendung natürlich auf eigene Gefahr.
+Dies ist eine LaTeX-Vorlage, die genutzt werden kann, um Seminar, Studien-, Masterarbeiten oder ähnliches am DHBW CAS mit LaTeX zu verfassen. Die Vorlage basiert auf einer [Vorlage der DHBW Horb](https://github.com/dhbw-horb/latexVorlage) und wurde etwas angepasst, um den Richtlinien des DHBW CAS (bzw. dem dortigen Fachbereich Technik) zu entsprechen. Dies ist keine offizielle Vorlage des DHBW CAS, daher erfolgt die Verwendung natürlich auf eigene Gefahr.
 
 # Vorschau
 Eine Vorschau, wie ein Dokument unter Verwendung dieser Vorlage aussieht (ohne es selbst bauen zu müssen), kann unter den [GitHub-Actions](https://github.com/maxkde/latextemplate-dhbwcas/actions) für dieses Repository angeschaut werden. Den neuesten Eintrag dort anklicken und das Artefakt `documentation-paper` herunterladen, darin liegt dann die `dokumentation.pdf`.
